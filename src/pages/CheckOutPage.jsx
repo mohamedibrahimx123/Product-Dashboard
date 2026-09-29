@@ -6,7 +6,7 @@ import CartSummary from "../components/CartSummary";
 import Button from "../components/Button";
 import Navbar from "../components/Navbar";
 import { createOrder } from "../Services/orderService";
-import { CheckIcon, ArrowLeftIcon, ShieldCheckIcon, SparklesIcon, UserIcon, LockIcon } from "../components/Icons";
+import { CheckIcon, ArrowLeftIcon, ShieldCheckIcon, SparklesIcon, UserIcon } from "../components/Icons";
 
 export default function CheckOutPage() {
   const { cart, totalPrice, clearCart } = useCart();
@@ -56,7 +56,7 @@ export default function CheckOutPage() {
       console.error(err);
       setError("Failed to place order. Please try again.");
       addToast("Failed to place order", "danger");
-    } fontally: {
+    } finally {
       setIsSubmitting(false);
     }
   }

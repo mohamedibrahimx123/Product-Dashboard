@@ -19,7 +19,7 @@ import {
   CLEAR_CART,
 } from "../constants/cartActionTypes";
 
-export const CartContext = createContext();
+export const CartContext = createContext(null);
 
 
 export function CartProvider({ children }) {

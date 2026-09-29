@@ -7,7 +7,7 @@ export default function CategoryFilter({
 }) {
   const formatCategory = (cat) => {
     if (!cat) return "";
-    return cat.charAt(0).toUpperCase() + cat.slice(1).replace("-", " ");
+    return cat.charAt(0).toUpperCase() + cat.slice(1).replace(/-/g, " ");
   };
 
   return (
