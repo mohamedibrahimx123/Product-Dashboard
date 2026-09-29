@@ -156,7 +156,7 @@ export default function ProductsPage() {
       {/* Footer */}
       <footer className="mt-auto border-t border-slate-800/80 py-8 bg-slate-950/60 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500">
-          <p>© 2026 NexusStore. All rights reserved. Powered by React & Tailwind CSS.</p>
+          <p>© 2026 NexusStore. All rights reserved.</p>
         </div>
       </footer>
     </div>
